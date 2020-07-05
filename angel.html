@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pirogramming13</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 65px;
+            background-color: white;
+            font-size: 0;
+            z-index: 999;
+        }
+
+        nav a {
+            position: relative;
+            width: 20vw;
+            display: inline-block;
+            box-sizing: border-box;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        nav div:last-child {
+            border-right: 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            background-color: white;
+            color: black;
+        }
+
+        .nav-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .nav-link:hover > .hidden_box {
+            display: block;
+        }
+
+        main {
+            width: 68vw;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+
+        .section {
+            position: relative;
+            border: 1px solid black;
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+
+        .buffer {
+            position: absolute;
+            top: -65px;
+        }
+
+        .angel_super {
+            width: 10%;
+            vertical-align: 30%;
+        }
+
+        .angel_middle {
+            width: 10%;
+            vertical-align: -8%;
+        }
+
+        .angel {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 5vw;
+        }
+
+        .hidden_box {
+            display: none;
+            position: absolute;
+            top: 65px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+<nav>
+    <a href="#1" class="nav-link">HTML
+        <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
+    </a>
+    <a href="#2" class="nav-link"><span class="vertical_middle">
+        CSS</span><img class="angel_super" src="./angel2.jpg" alt="비둘기">
+        <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
+    </a>
+    <a href="#3" class="nav-link">PYTHON
+        <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
+    </a>
+    <a href="#4" class="nav-link">DJANGO
+        <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
+    </a>
+    <a href="#5" class="nav-link">TEAM_PROJECT
+        <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
+    </a>
+</nav>
+<main>
+    <div class="block"></div>
+    <div class="section">
+        <div id="1" class="buffer"></div>
+        <h1 class="title">1. HTML</h1>
+        <p class="desc">1주차에는 HTML을 배웁니다.</p>
+        <img src="./angels.jpg" class="angel">
+    </div>
+    <div class="section">
+        <div id="2" class="buffer"></div>
+        <h1 class="title">2. CSS<img class="angel_middle" src="./angel.jpg" alt="비둘기"></h1>
+        <p class="desc">HTML과 더불어 CSS, 비둘기 두마리를 데려온 사람이 나타납니다.</p>
+        <img src="./angels.jpg" class="angel">
+    </div>
+    <div class="section">
+        <div id="3" class="buffer"></div>
+        <h1 class="title">3. PYTHON</h1>
+        <p class="desc">2주차에는 PYTHON을 배웁니다.</p>
+        <img src="./angels.jpg" class="angel">
+    </div>
+    <div class="section">
+        <div id="4" class="buffer"></div>
+        <h1 class="title">4. DJANGO</h1>
+        <p class="desc">3주차부터 5주차까지 3주에 걸쳐 DJANGO를 배웁니다.</p>
+        <img src="./angels.jpg" class="angel">
+    </div>
+    <div class="section">
+        <div id="5" class="buffer"></div>
+        <h1 class="title">5. TEAM PROJECT</h1>
+        <p class="desc">6주차부터 8주차까지 3주에 걸쳐 팀 프로젝트를 진행합니다.</p>
+        <img src="./angels.jpg" class="angel">
+    </div>
+</main>
+</body>
+
+</html>

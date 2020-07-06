@@ -2,116 +2,38 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>pirogramming13</title>
-    <style>
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 65px;
-            background-color: white;
-            font-size: 0;
-            z-index: 999;
-        }
-
-        nav a {
-            position: relative;
-            width: 20vw;
-            display: inline-block;
-            box-sizing: border-box;
-            border-right: 1px solid black;
-            border-bottom: 1px solid black;
-            padding: 15px 0;
-            text-align: center;
-            font-size: 26px;
-        }
-
-        nav div:last-child {
-            border-right: 0;
-        }
-
-        .nav-link {
-            text-decoration: none;
-            background-color: white;
-            color: black;
-        }
-
-        .nav-link:hover {
-            background-color: black;
-            color: white;
-        }
-
-        .nav-link:hover > .hidden_box {
-            display: block;
-        }
-
-        main {
-            width: 68vw;
-            margin: 0 auto;
-            padding-top: 80px;
-        }
-
-        .section {
-            position: relative;
-            border: 1px solid black;
-            padding: 0 20px;
-            margin-bottom: 10px;
-        }
-
-        .buffer {
-            position: absolute;
-            top: -65px;
-        }
-
-        .angel_super {
-            width: 10%;
-            vertical-align: 30%;
-        }
-
-        .angel_middle {
-            width: 10%;
-            vertical-align: -8%;
-        }
-
-        .angel {
-            width: 100%;
-        }
-
-        .title {
-            font-size: 5vw;
-        }
-
-        .hidden_box {
-            display: none;
-            position: absolute;
-            top: 65px;
-            width: 300px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./angel.css">
 </head>
 
 <body>
 <nav>
-    <a href="#1" class="nav-link">HTML
+    <div class="nav-item">
+        <a href="#1" class="nav-link">HTML</a>
         <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
-    </a>
-    <a href="#2" class="nav-link"><span class="vertical_middle">
-        CSS</span><img class="angel_super" src="./angel2.jpg" alt="비둘기">
+    </div>
+
+    <div class="nav-item">
+        <a href="#2" class="nav-link"><span class="vertical_middle">
+            CSS</span><img class="angel_super" src="./angel2.jpg" alt="비둘기">
+        </a>
         <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
-    </a>
-    <a href="#3" class="nav-link">PYTHON
+    </div>
+
+    <div class="nav-item">
+        <a href="#3" class="nav-link">PYTHON</a>
         <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
-    </a>
-    <a href="#4" class="nav-link">DJANGO
+    </div>
+    <div class="nav-item">
+        <a href="#4" class="nav-link">DJANGO</a>
         <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
-    </a>
-    <a href="#5" class="nav-link">TEAM_PROJECT
+    </div>
+    <div class="nav-item">
+        <a href="#5" class="nav-link">TEAM_PROJECT</a>
         <div class="hidden_box"><img src="./angels2.jpg" class="angel"></div>
-    </a>
+    </div>
 </nav>
 <main>
     <div class="block"></div>
